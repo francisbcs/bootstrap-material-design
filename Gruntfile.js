@@ -178,8 +178,8 @@ module.exports = function(grunt) {
 
     grunt.registerTask("build", function(target) {
         var buildType = "default";
-        if (target && target === "scss") {
-            buildType = "scss";
+        if (target && target === "less") {
+            buildType = "less";
         }
 
         grunt.task.run(["newer:jshint", "jasmine:scripts", buildType]);
@@ -192,8 +192,8 @@ module.exports = function(grunt) {
 
     grunt.registerTask("serve", function(target){
         var buildTarget = "default";
-        if(target && target === "scss") {
-            buildTarget = "scss";
+        if(target && target === "less") {
+            buildTarget = "less";
         }
         grunt.task.run([
             "build:"+ buildTarget,

@@ -2,31 +2,37 @@
 
 // material icons path
 @material-font-path: "../fonts";
+@import "material-color-prefixed.less";
 
 // Material colors palette
-@red: #F44336;
-@pink: #E91E63;
-@purple: #9C27B0;
-@deeppurple: #673AB7;
-@indigo: #3F51B5;
-@lightblue: #03A9F4;
-@cyan: #00BCD4;
-@teal: #009688;
-@lightgreen: #8BC34A;
-@lime: #CDDC39;
-@lightyellow: #FFEB3B;
-@orange: #FF9800;
-@deeporange: #FF5722;
-@grey: #9E9E9E;
-@bluegrey: #607D8B;
-@brown: #795548;
-@lightgrey: #ECECEC;
+@red: @md-clr-red;
+@pink: @md-clr-pink;
+@purple: @md-clr-purple;
+@deeppurple: @md-clr-deep-purple;
+@indigo: @md-clr-indigo;
+// New: Blue
+@blue: @md-clr-blue;
+@lightblue: @md-clr-light-blue;
+@cyan: @md-clr-cyan;
+@teal: @md-clr-teal;
+// New: Green
+@green: @md-clr-green;
+@lightgreen: @md-clr-light-green;
+@lime: @md-clr-lime;
+@lightyellow: @md-clr-yellow;
+// New: Amber
+@amber: @md-clr-amber;
+@orange: @md-clr-orange;
+@deeporange: @md-clr-deep-orange;
+@grey: @md-clr-grey;
+@bluegrey: @md-clr-blue-grey;
+@brown: @md-clr-brown;
+@lightgrey: @md-clr-grey;
 
-// Bootstrap shades
-@primary: #4285F4;
-@success: #0F9D58;
+@primary: @md-clr-light-blue-900;
+@success: @green;
 @info: @lightblue;
-@warning: @deeporange;
+@warning: @amber;
 @danger: @red;
 
 // Typography elements for Material
@@ -71,7 +77,7 @@
 @input-info:    @info;
 
 @navbar-danger-bg: @danger;
-@navbar-inverse-bg: #5264AE;
+@navbar-inverse-bg: @md-clr-grey-800;
 @navbar-warning-bg: @warning;
 @navbar-success-bg: @success;
 @navbar-info-bg:    @info;
